@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://by4i6dykk65wc"
+path="res://.godot/imported/Low_Poly_Vehicles_carPolice.obj-ee0df9163482214c7f19db092e22bd21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Low_Poly_Vehicles_carPolice.obj-ee0df9163482214c7f19db092e22bd21.mesh"]
+
+source_file="res://Low_Poly_Cars_DevilsWorkShop_V03/OBJ/Low_Poly_Vehicles_carPolice.obj"
+dest_files=["res://.godot/imported/Low_Poly_Vehicles_carPolice.obj-ee0df9163482214c7f19db092e22bd21.mesh", "res://.godot/imported/Low_Poly_Vehicles_carPolice.obj-ee0df9163482214c7f19db092e22bd21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

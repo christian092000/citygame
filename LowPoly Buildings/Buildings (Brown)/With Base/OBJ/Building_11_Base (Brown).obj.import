@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tf364r5fcqxq"
+path="res://.godot/imported/Building_11_Base (Brown).obj-2a0ab890b9272909dfd5a7fec96d8017.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Building_11_Base (Brown).obj-2a0ab890b9272909dfd5a7fec96d8017.mesh"]
+
+source_file="res://LowPoly Buildings/Buildings (Brown)/With Base/OBJ/Building_11_Base (Brown).obj"
+dest_files=["res://.godot/imported/Building_11_Base (Brown).obj-2a0ab890b9272909dfd5a7fec96d8017.mesh", "res://.godot/imported/Building_11_Base (Brown).obj-2a0ab890b9272909dfd5a7fec96d8017.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

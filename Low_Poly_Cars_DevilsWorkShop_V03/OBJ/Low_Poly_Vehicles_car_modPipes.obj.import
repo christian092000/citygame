@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgv8fqc68gw2b"
+path="res://.godot/imported/Low_Poly_Vehicles_car_modPipes.obj-d63c9ad46c673727cb9a3b624ec80dbc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Low_Poly_Vehicles_car_modPipes.obj-d63c9ad46c673727cb9a3b624ec80dbc.mesh"]
+
+source_file="res://Low_Poly_Cars_DevilsWorkShop_V03/OBJ/Low_Poly_Vehicles_car_modPipes.obj"
+dest_files=["res://.godot/imported/Low_Poly_Vehicles_car_modPipes.obj-d63c9ad46c673727cb9a3b624ec80dbc.mesh", "res://.godot/imported/Low_Poly_Vehicles_car_modPipes.obj-d63c9ad46c673727cb9a3b624ec80dbc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

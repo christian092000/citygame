@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bct80khxglo56"
+path="res://.godot/imported/Building_10_Extra (Blue).obj-4a61a41e6cd016a13da1ddb02365e0b4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Building_10_Extra (Blue).obj-4a61a41e6cd016a13da1ddb02365e0b4.mesh"]
+
+source_file="res://Low_Poly_Cars_DevilsWorkShop_V03/FBX 2013/LowPoly Buildings/Buildings (Blue)/Without Base/OBJ/Building_10_Extra (Blue).obj"
+dest_files=["res://.godot/imported/Building_10_Extra (Blue).obj-4a61a41e6cd016a13da1ddb02365e0b4.mesh", "res://.godot/imported/Building_10_Extra (Blue).obj-4a61a41e6cd016a13da1ddb02365e0b4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

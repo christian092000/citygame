@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c62jr025sswkj"
+path="res://.godot/imported/Building_9_Extra (Blue).obj-686257b554177df4ae6dcd069b1be450.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Building_9_Extra (Blue).obj-686257b554177df4ae6dcd069b1be450.mesh"]
+
+source_file="res://LowPoly Buildings/Buildings (Blue)/Without Base/OBJ/Building_9_Extra (Blue).obj"
+dest_files=["res://.godot/imported/Building_9_Extra (Blue).obj-686257b554177df4ae6dcd069b1be450.mesh", "res://.godot/imported/Building_9_Extra (Blue).obj-686257b554177df4ae6dcd069b1be450.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

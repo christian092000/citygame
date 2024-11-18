@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://buiq5xftqarq7"
+path="res://.godot/imported/Building_2_Extra (Brown).obj-f35900f5f306ea03d0355935be2ae2ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Building_2_Extra (Brown).obj-f35900f5f306ea03d0355935be2ae2ea.mesh"]
+
+source_file="res://Low_Poly_Cars_DevilsWorkShop_V03/FBX 2013/LowPoly Buildings/Buildings (Brown)/Without Base/OBJ/Building_2_Extra (Brown).obj"
+dest_files=["res://.godot/imported/Building_2_Extra (Brown).obj-f35900f5f306ea03d0355935be2ae2ea.mesh", "res://.godot/imported/Building_2_Extra (Brown).obj-f35900f5f306ea03d0355935be2ae2ea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
