@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5muldu5wgxeu"]
+
+[ext_resource type="PackedScene" uid="uid://dw5k5malv3w6o" path="res://test.tscn" id="1_ovsrc"]
+[ext_resource type="PackedScene" uid="uid://da2gyr6cffhji" path="res://scenes/character.tscn" id="2_s07mw"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="3_2h6kq"]
+
+[node name="Test" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_ovsrc")]
+
+[node name="Character" parent="." instance=ExtResource("2_s07mw")]
+transform = Transform3D(-0.2, 0, -1.74845e-08, 0, 0.2, 0, 1.74845e-08, 0, -0.2, 32.456, 0, 32.1068)
+
+[node name="control" parent="." instance=ExtResource("3_2h6kq")]
+action_left = "move_left"
+action_right = "move_right"
+action_up = "move_up"
+action_down = "move_down"
+
+[node name="camera" parent="." instance=ExtResource("3_2h6kq")]
+offset_left = 856.0
+offset_top = -300.0
+offset_right = 1156.0
+offset_bottom = 0.0

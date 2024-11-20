@@ -31,9 +31,9 @@ func agregar_colisiones_a_grupo(grupo_nodo):
 			# Establecer la propiedad "owner" para que se guarde correctamente
 			static_body.owner = child.owner
 			collision_shape.owner = child.owner
-			print("Hello world")
-			print(child.name)
-			print(child.owner.name)
+			#print("Hello world")
+			#print(child.name)
+			#print(child.owner.name)
 
 		elif child is Node3D:
 			# Si hay subgrupos (por ejemplo, calles agrupadas), recorrerlos también
