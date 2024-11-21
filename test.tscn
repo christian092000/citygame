@@ -34,6 +34,13 @@ material_override = SubResource("StandardMaterial3D_1btng")
 mesh = SubResource("PlaneMesh_5irfa")
 surface_material_override/0 = SubResource("StandardMaterial3D_yb65s")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Suelo" type="MeshInstance3D" parent="."]
+transform = Transform3D(48.4325, 0, 0, 0, 0.860567, 0, 0, 0, 39.9879, 0, -0.1, 0)
+mesh = SubResource("PlaneMesh_eihdb")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0ud")
+
 [node name="estructuras" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.205842, 0, -0.301)
 script = ExtResource("3_r3u32")
@@ -733,7 +740,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4912, 0, -9.36594)
 [node name="calles_aux" type="Node3D" parent="estructuras"]
 
 [node name="road-straight21" parent="estructuras/calles_aux" instance=ExtResource("11_261xa")]
-transform = Transform3D(2.52127, -5.2799e-08, -1.38204, 1.36342e-07, 0.999999, -2.06846e-08, 0.463331, -6.9523e-09, 7.52051, 42.1298, 1.49799e-07, 35.3947)
+transform = Transform3D(2.52127, -5.2799e-08, -1.38204, 1.36342e-07, 0.999999, -2.06853e-08, 0.463331, -6.95231e-09, 7.52051, 42.1298, 1.49799e-07, 35.3947)
+
+[node name="road-straight56" parent="estructuras/calles_aux" instance=ExtResource("11_261xa")]
+transform = Transform3D(0.0614687, -5.29461e-08, -7.64425, 2.16156e-08, 0.999999, -4.03419e-07, 2.56275, -7.16454e-09, 0.183346, 6.767, -2.15378e-06, -26.4067)
+
+[node name="road-straight57" parent="estructuras/calles_aux" instance=ExtResource("11_261xa")]
+transform = Transform3D(0.0511163, -5.29461e-08, -7.64425, 1.79752e-08, 0.999999, -4.03419e-07, 2.13114, -7.16454e-09, 0.183346, 27.5847, -8.96854e-07, -4.8139)
+
+[node name="road-straight58" parent="estructuras/calles_aux" instance=ExtResource("11_261xa")]
+transform = Transform3D(0.0481659, -5.29461e-08, -7.64425, 1.69376e-08, 0.999999, -4.03419e-07, 2.00813, -7.16454e-09, 0.183346, -2.48863, -2.63993e-06, -25.8628)
 
 [node name="road-straight22" parent="estructuras/calles_aux" instance=ExtResource("11_261xa")]
 transform = Transform3D(2.11943, -4.06294e-08, 0.977692, 8.73885e-08, 0.999999, -2.20502e-08, -0.206991, 6.17071e-09, 10.0109, -40.6984, -4.27376e-06, 12.8889)
@@ -1282,7 +1298,7 @@ transform = Transform3D(0.703442, 1.77636e-15, -2.90269e-08, 0, 1, 1.38411e-14, 
 transform = Transform3D(0.703442, 1.77636e-15, -2.90269e-08, 0, 1, 1.38411e-14, -9.79511e-09, 5.82867e-16, 0.879527, 0.0961104, 3.00185e-09, 6.91659)
 
 [node name="pablo_valdez" type="Node3D" parent="estructuras"]
-transform = Transform3D(0.0611981, -0.00493557, -5.35035, 0.00240187, 0.991892, -0.0264958, 2.32462, -0.000894929, 0.14088, 43.706, 0.5, -37.606)
+transform = Transform3D(0.0608726, -4.53176e-05, -5.35044, 0.00405863, 0.991903, 0, 2.32463, -0.00173061, 0.140106, 43.706, 0, -37.606)
 
 [node name="road-straight" parent="estructuras/pablo_valdez" instance=ExtResource("11_261xa")]
 transform = Transform3D(0.780272, 2.91038e-11, -1.49012e-08, -1.16415e-10, 1, -2.18279e-10, -2.79397e-09, 5.68434e-11, 0.968692, -0.0249605, 0.000603616, -0.152765)
@@ -1586,10 +1602,3 @@ transform = Transform3D(0.802602, 1.77636e-15, -2.90269e-08, 0, 1, 1.38411e-14, 
 
 [node name="road-straight23" parent="estructuras/av_republica" instance=ExtResource("11_261xa")]
 transform = Transform3D(0.802602, 1.77636e-15, -2.90269e-08, 0, 1, 1.38411e-14, -1.11759e-08, 5.82867e-16, 0.879527, -4.60719e-07, 6.20035e-13, 16.7815)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-
-[node name="Suelo" type="MeshInstance3D" parent="."]
-transform = Transform3D(48.4325, 0, 0, 0, 0.860567, 0, 0, 0, 39.9879, 0, -0.1, 0)
-mesh = SubResource("PlaneMesh_eihdb")
-surface_material_override/0 = SubResource("StandardMaterial3D_ps0ud")
