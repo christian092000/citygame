@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GameCity"
-run/main_scene="res://node_3d2.tscn"
+run/main_scene="res://scenes/test.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
