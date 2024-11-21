@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="GameCity"
-run/main_scene="res://node_3d2.tscn"
+run/main_scene="res://scenes/2d/start.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0.796243, 0.796243, 0.796243, 1)
 config/icon="res://icon.svg"
 
 [input]

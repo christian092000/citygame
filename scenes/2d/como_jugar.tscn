@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://sxvdrv5p06sm"]
+
+[ext_resource type="Script" path="res://scenes/2d/volver.gd" id="1_qy1w6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w8ld0"]
+bg_color = Color(0.388282, 0.837937, 0.353524, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5pyt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_41nki"]
+bg_color = Color(0.224443, 0.848368, 0.407464, 1)
+
+[node name="ComoJugar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 52.0
+offset_right = 799.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 70
+text = "¿Cómo jugar?"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 195.0
+offset_right = 920.0
+offset_bottom = 559.0
+theme_override_font_sizes/normal_font_size = 40
+text = "Muevete con los joysticks de la pantalla y llega al parque morelos antes del anochecer evitando los coches, el parque morelos no es bontio de noche."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 39.0
+offset_right = 178.0
+offset_bottom = 106.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_w8ld0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g5pyt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_41nki")
+text = "Volver"
+script = ExtResource("1_qy1w6")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

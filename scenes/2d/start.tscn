@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://dmrbbeont7eul"]
+
+[ext_resource type="Script" path="res://scenes/2d/button.gd" id="1_ktmb4"]
+[ext_resource type="Script" path="res://scenes/2d/como_jugar.gd" id="2_1pgmc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tha7g"]
+bg_color = Color(0.175096, 0.536821, 0.809972, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_li81u"]
+bg_color = Color(0.113038, 0.531522, 0.852784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w6cp4"]
+bg_color = Color(0.266799, 0.649998, 0.803881, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_ofgt2"]
+msdf_size = 409
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ts0ql"]
+bg_color = Color(0.293848, 0.699591, 0.351691, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyk0q"]
+bg_color = Color(0.267953, 0.704671, 0.320019, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kft04"]
+bg_color = Color(0.479469, 0.670266, 0.21272, 1)
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Iniciar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 471.0
+offset_right = 527.0
+offset_bottom = 541.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_tha7g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_li81u")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w6cp4")
+text = "Iniciar "
+script = ExtResource("1_ktmb4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 137.0
+offset_right = 1002.0
+offset_bottom = 220.0
+theme_override_fonts/font = SubResource("SystemFont_ofgt2")
+theme_override_font_sizes/font_size = 60
+text = "Buscando el Parque Morelos"
+
+[node name="Como_jugar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 471.0
+offset_right = 901.0
+offset_bottom = 541.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_ts0ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hyk0q")
+theme_override_styles/normal = SubResource("StyleBoxFlat_kft04")
+text = "¿Cómo jugar?"
+script = ExtResource("2_1pgmc")
+
+[connection signal="pressed" from="Iniciar" to="Iniciar" method="_on_pressed"]
+[connection signal="pressed" from="Como_jugar" to="Como_jugar" method="_on_pressed"]

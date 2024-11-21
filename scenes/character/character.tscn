@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://da2gyr6cffhji"]
 
-[ext_resource type="Script" path="res://scenes/character.gd" id="1_qu6x3"]
+[ext_resource type="Script" path="res://scenes/character/character.gd" id="1_qu6x3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t1iyf"]
 height = 2.24573
