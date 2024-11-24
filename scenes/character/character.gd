@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @export_group("Camera")
-@export_range(0.0, 0.5) var camera_sensitivity: float = 0.55
+@export_range(0.0, 0.5) var camera_sensitivity: float = 3
 
 @export_group("Movement")
 @export var move_speed: float = 6.0

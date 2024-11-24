@@ -7,7 +7,6 @@ var rotacion_x_objetivo: float = 0.0
 func _ready():
 	print("Iniciando alineación de nodos (dinámico)...")
 	alinear_todos_los_nodos(self)
-	print("Alineación completada.")
 
 func alinear_todos_los_nodos(grupo_nodo):
 	for child in grupo_nodo.get_children():
