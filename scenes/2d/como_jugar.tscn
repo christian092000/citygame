@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://sxvdrv5p06sm"]
+[gd_scene load_steps=6 format=3 uid="uid://sxvdrv5p06sm"]
 
 [ext_resource type="Script" path="res://scenes/2d/volver.gd" id="1_qy1w6"]
+[ext_resource type="Texture2D" uid="uid://bf4l88tmt8vfo" path="res://scenes/2d/mapa.jpg" id="2_vvhgb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w8ld0"]
 bg_color = Color(0.388282, 0.837937, 0.353524, 1)
@@ -29,10 +30,10 @@ text = "¿Cómo jugar?"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 245.0
-offset_top = 195.0
-offset_right = 920.0
-offset_bottom = 559.0
+offset_left = 70.0
+offset_top = 215.0
+offset_right = 661.0
+offset_bottom = 492.0
 theme_override_font_sizes/normal_font_size = 40
 text = "Muevete con los joysticks de la pantalla llegar al parque morelos antes del anochecer, el parque morelos no es bontio de noche."
 
@@ -49,5 +50,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_g5pyt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_41nki")
 text = "Volver"
 script = ExtResource("1_qy1w6")
+
+[node name="Mapa" type="Sprite2D" parent="."]
+position = Vector2(890.75, 385.625)
+scale = Vector2(0.860895, 0.896214)
+texture = ExtResource("2_vvhgb")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -19,6 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 277.0
 offset_top = 156.0
 offset_right = 884.0
@@ -27,6 +28,7 @@ theme_override_font_sizes/normal_font_size = 40
 text = "¡Felicidades llegaste al parque morelos antes del anochecer!"
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 380.0
 offset_top = 347.0
 offset_right = 776.0

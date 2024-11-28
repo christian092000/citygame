@@ -70,5 +70,22 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_kft04")
 text = "¿Cómo jugar?"
 script = ExtResource("2_1pgmc")
 
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 298.0
+offset_right = 782.0
+offset_bottom = 351.0
+text = "Christian Misael Figueroa Rodríguez - 216817945
+Hector Emmanuel Garcia Garcia - 217585177"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 220.0
+offset_right = 781.0
+offset_bottom = 243.0
+text = "Concientización del peaton en espacios publicos"
+
 [connection signal="pressed" from="Iniciar" to="Iniciar" method="_on_pressed"]
 [connection signal="pressed" from="Como_jugar" to="Como_jugar" method="_on_pressed"]
