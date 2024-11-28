@@ -34,7 +34,7 @@ offset_top = 195.0
 offset_right = 920.0
 offset_bottom = 559.0
 theme_override_font_sizes/normal_font_size = 40
-text = "Muevete con los joysticks de la pantalla y llega al parque morelos antes del anochecer evitando los coches, el parque morelos no es bontio de noche."
+text = "Muevete con los joysticks de la pantalla llegar al parque morelos antes del anochecer, el parque morelos no es bontio de noche."
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0

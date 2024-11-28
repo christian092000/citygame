@@ -38,3 +38,33 @@ func agregar_colisiones_a_grupo(grupo_nodo):
 		elif child is Node3D:
 			# Si hay subgrupos (por ejemplo, calles agrupadas), recorrerlos también
 			agregar_colisiones_a_grupo(child)
+
+var new_scene_path = "res://scenes/2d/gameOver.tscn"
+var final_scene_path = "res://scenes/2d/final.tscn"
+var time_left = 100.0  # Tiempo inicial en segundos
+
+func _on_timer_timeout() -> void:
+	# Cambiar a la nueva escen
+	print("Se acabo")
+	var new_scene = load(new_scene_path)
+	get_tree().change_scene_to_packed(new_scene)
+
+func _process(delta):
+	# Actualizar el tiempo restante
+	time_left -= delta
+	if time_left < 0:
+		time_left = 0  # Evitar números negativos
+		# Mostrar el tiempo restante en el Label
+	var label = $timer  # Cambia "$Label" a la ruta del nodo Label
+	if label:
+		label.text = "Tiempo: " + str(round(time_left))
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.name == "Character":  
+		print("El personaje ha llegado al área objetivo.")
+		var new_scene = load(final_scene_path)
+		if new_scene:
+			get_tree().change_scene_to_packed(new_scene)
+		else:
+			print("Error al cargar la escena: ", new_scene_path)

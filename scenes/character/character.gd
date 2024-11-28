@@ -5,11 +5,30 @@ extends CharacterBody3D
 
 @export_group("Movement")
 @export var move_speed: float = 6.0
-@export var acceleration: float = 3.0
+@export var acceleration: float = 1.0
 
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 
+# Variable para mostrar el mensaje en pantalla
+var show_message = false
+var message_timer = 2.0  # Duración del mensaje en segundos
+
+@onready var label = $Label
+
+func _ready() -> void:
+	$CollisionShape3D.connect("body_entered", Callable(self, "_on_body_entered"))
+
+func _on_body_entered(body):
+	# Verifica si el nodo pertenece al grupo "limites"
+	if body.is_in_group("limites"):
+		show_message = true
+		if label:
+			label.visible = true
+		await get_tree().create_timer(message_timer).timeout
+		show_message = false
+		if label:
+			label.visible = false
 # Este joystick controla la cámara
 @export var joystick_camera: VirtualJoystick
 

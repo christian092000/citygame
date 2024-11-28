@@ -1,9 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://da2gyr6cffhji"]
+[gd_scene load_steps=7 format=3 uid="uid://da2gyr6cffhji"]
 
 [ext_resource type="Script" path="res://scenes/character/character.gd" id="1_qu6x3"]
+[ext_resource type="Texture2D" uid="uid://c2vr6ljeeconi" path="res://scenes/2d/cielo.png" id="2_d3fg2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t1iyf"]
 height = 2.24573
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_17w5v"]
+panorama = ExtResource("2_d3fg2")
+
+[sub_resource type="Sky" id="Sky_2xeis"]
+sky_material = SubResource("PanoramaSkyMaterial_17w5v")
+
+[sub_resource type="Environment" id="Environment_57dv8"]
+background_mode = 2
+sky = SubResource("Sky_2xeis")
+ambient_light_source = 2
+ambient_light_color = Color(0.442911, 0.442911, 0.442911, 1)
 
 [node name="Character" type="CharacterBody3D"]
 script = ExtResource("1_qu6x3")
@@ -19,3 +32,6 @@ transform = Transform3D(1, 0, 0, 0, 0.861629, -0.507538, 0, 0.507538, 0.861629, 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 unique_name_in_owner = true
 transform = Transform3D(-1, -3.01981e-14, -8.74227e-08, 3.68081e-08, 0.907044, -0.421036, 7.92963e-08, -0.421036, -0.907044, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_57dv8")
