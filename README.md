@@ -1,6 +1,6 @@
-# 🌆 **CityGame**
+# 🌆 **Buscando el Parque Morelos**
 
-**CityGame** es un videojuego 3D inspirado en el bullicio y la dinámica de la vida urbana. Explora una ciudad virtual interactiva, experimenta sonidos ambientales realistas y sumérgete en una experiencia de juego única diseñada con **Godot Engine**.
+**Bucando el Parque Morelos** es un videojuego 3D que combina diversión e impacto social, diseñado para recrear un pequeño fragmento de la ciudad mientras pone de manifiesto la importancia del peatón en la vida urbana. El jugador asume el desafío de recorrer el camino desde un punto inicial hasta el emblemático Parque Morelos, esquivando el tráfico. **Godot Engine**.
 
 ---
 
