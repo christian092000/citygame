@@ -4,7 +4,7 @@ extends CharacterBody3D
 @export_range(0.0, 0.5) var camera_sensitivity: float = 3
 
 @export_group("Movement")
-@export var move_speed: float = 6.0
+@export var move_speed: float = 130.0
 @export var acceleration: float = 1.0
 
 @onready var _camera_pivot: Node3D = %CameraPivot
@@ -34,24 +34,32 @@ func _on_body_entered(body):
 
 func _physics_process(delta: float) -> void:
 	# *** Movimiento de la cámara con joystick ***
-	# Capturamos la entrada de las acciones asociadas al joystick de la cámara
 	var camera_horizontal: float = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	var camera_vertical: float = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 
-	# Aplicar rotaciones
-	_camera_pivot.rotation.y -= camera_horizontal * camera_sensitivity * delta # Rotación horizontal (Yaw)
-	_camera_pivot.rotation.x += camera_vertical * camera_sensitivity * delta  # Rotación vertical (Pitch)
+	# Rotaciones de la cámara
+	_camera_pivot.rotation.y -= camera_horizontal * camera_sensitivity * delta
+	_camera_pivot.rotation.x += camera_vertical * camera_sensitivity * delta
 
 	# Limitar inclinación vertical
 	_camera_pivot.rotation.x = clamp(_camera_pivot.rotation.x, -PI / 6.0, PI / 3.0)
 
-	# *** Movimiento del personaje (respetado) ***
+	# *** Movimiento del personaje ***
 	var raw_input: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down", 0.4)
-	var forward: Vector3 = _camera.global_basis.z
-	var right: Vector3 = _camera.global_basis.x
-	var move_direction: Vector3 = forward * raw_input.y + right * raw_input.x
-	move_direction.y = 0.0
-	move_direction = move_direction.normalized()
 
-	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
+	if raw_input == Vector2.ZERO:
+		# Si no hay entrada, detener al personaje inmediatamente
+		velocity = Vector3.ZERO
+	else:
+		# Calcular dirección de movimiento corregida
+		var forward: Vector3 = _camera.global_transform.basis.z
+		var right: Vector3 = _camera.global_transform.basis.x
+		var move_direction: Vector3 = forward * raw_input.y + right * raw_input.x
+		move_direction.y = 0.0
+		move_direction = move_direction.normalized()
+
+		# Ajustar velocidad para que no sea tan rápida
+		velocity = move_direction * move_speed * delta
+
+	# Mover al personaje
 	move_and_slide()

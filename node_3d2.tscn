@@ -1714,7 +1714,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 4.33681e-19, -0.000261165, -1.73472e-18, 0.182997, 0, 0.000407949, -8.67362e-19, -0.191838, -0.118223, 0, -1.42339)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="carros/calz_independencia1/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.223313, 6.52342e-10, -17.8069)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.223313, 6.52342e-10, -17.8069)
 progress = 21.7237
 script = ExtResource("12_n2kkd")
 
@@ -1722,7 +1722,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 4.33681e-19, -0.000261165, -1.73472e-18, 0.182997, 0, 0.000407949, -8.67362e-19, -0.191838, -0.118225, 0, -1.42339)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="carros/calz_independencia1/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.292636, 4.80531e-09, -39.5305)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.292636, 4.80531e-09, -39.5305)
 progress = 43.4473
 script = ExtResource("12_n2kkd")
 
@@ -1730,7 +1730,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, -3.03577e-18, -0.000261165, -8.67362e-19, 0.182997, 0, 0.000407949, 8.67362e-19, -0.191838, -0.118225, 0, -1.42339)
 
 [node name="PathFollow3D4" type="PathFollow3D" parent="carros/calz_independencia1/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.361959, 8.9583e-09, -61.2542)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.361959, 8.9583e-09, -61.2542)
 progress = 65.171
 script = ExtResource("12_n2kkd")
 
@@ -1751,7 +1751,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 4.33681e-19, -0.000261165, -8.67362e-19, 0.182997, -8.67362e-19, 0.000407942, 8.67362e-19, -0.191838, -0.116432, 0, -0.107552)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="carros/calz_independencia2/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.223313, 6.52342e-10, -17.8069)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.223313, 6.52342e-10, -17.8069)
 progress = 21.7237
 script = ExtResource("12_n2kkd")
 
@@ -1759,7 +1759,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 4.33681e-19, -0.000261165, -8.67362e-19, 0.182997, -8.67362e-19, 0.000407942, 8.67362e-19, -0.191838, -0.116434, 0, -0.107557)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="carros/calz_independencia2/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.292636, 4.80531e-09, -39.5305)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.292636, 4.80531e-09, -39.5305)
 progress = 43.4473
 script = ExtResource("12_n2kkd")
 
@@ -1767,7 +1767,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 0, -0.000261165, -8.67362e-19, 0.182997, 0, 0.000407942, 1.73472e-18, -0.191838, -0.11643, 0, -0.107556)
 
 [node name="PathFollow3D4" type="PathFollow3D" parent="carros/calz_independencia2/Path3D"]
-transform = Transform3D(0.999991, -4.27441e-07, -0.00319111, 4.27441e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.361959, 8.9583e-09, -61.2542)
+transform = Transform3D(0.999991, -4.2744e-07, -0.00319111, 4.2744e-07, 1, -1.91172e-10, 0.00319111, -1.17285e-09, 0.999991, 0.361959, 8.9583e-09, -61.2542)
 progress = 65.171
 script = ExtResource("12_n2kkd")
 
@@ -2140,7 +2140,7 @@ script = ExtResource("12_n2kkd")
 transform = Transform3D(-0.299651, 3.46945e-18, -0.000261169, -3.46945e-18, 0.182997, 0, 0.000407949, 1.0842e-19, -0.191838, -0.118224, 0, -1.42339)
 
 [node name="PathFollow3D7" type="PathFollow3D" parent="carros/esteba_alatorre2/Path3D"]
-transform = Transform3D(0.998981, 4.63654e-06, 0.0446214, -4.64518e-06, 1, 9.2452e-08, -0.0446214, -2.99646e-07, 0.998981, -0.342294, -4.35306e-06, -41.6714)
+transform = Transform3D(0.998981, 4.63654e-06, 0.0446214, -4.64519e-06, 1, 9.2452e-08, -0.0446214, -2.99646e-07, 0.998981, -0.342294, -4.35306e-06, -41.6714)
 progress = 47.3525
 script = ExtResource("12_n2kkd")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://dw5k5malv3w6o"]
+[gd_scene load_steps=44 format=3 uid="uid://dw5k5malv3w6o"]
 
 [ext_resource type="Script" path="res://node_3d.gd" id="1_vep4s"]
 [ext_resource type="Texture2D" uid="uid://bydqysbar83b0" path="res://Captura de pantalla 2024-11-17 222853.png" id="2_w2jh8"]
@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://bu1i73w3rbd1v" path="res://Free Low Poly Vehicles Pack by Rgsdev/Sedan/Sedan.fbx" id="14_28lsd"]
 [ext_resource type="PackedScene" uid="uid://da2gyr6cffhji" path="res://scenes/character/character.tscn" id="16_cn03t"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="17_pyjmj"]
+[ext_resource type="AudioStream" uid="uid://dqajfh2im35bv" path="res://musica/carros.wav" id="18_4r5i3"]
+[ext_resource type="AudioStream" uid="uid://cygcd8wcd1k0l" path="res://musica/669548__sintelv__ripples-music-loop.wav" id="19_glob4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1btng"]
 albedo_texture = ExtResource("2_w2jh8")
@@ -1855,14 +1857,14 @@ transform = Transform3D(0.903806, 1.90726e-10, -0.427942, -1.72202e-10, 1, 8.199
 curve = SubResource("Curve3D_nxv6a")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="carros/industria/Path3D"]
-transform = Transform3D(0.999868, -2.72846e-08, 0.01537, -8.88167e-16, 1, 1.77514e-06, -0.01537, -1.77495e-06, 0.999868, 0.978276, -7.85537e-09, 3.05321)
+transform = Transform3D(0.999868, -2.72846e-08, 0.01537, -8.88166e-16, 1, 1.77514e-06, -0.01537, -1.77495e-06, 0.999868, 0.978276, -7.85537e-09, 3.05321)
 script = ExtResource("12_dee2j")
 
 [node name="Sedan" parent="carros/industria/Path3D/PathFollow3D" instance=ExtResource("14_28lsd")]
 transform = Transform3D(-0.362718, -3.46945e-18, -0.00706523, -6.93889e-18, 0.262016, 2.1684e-19, 0.00758518, 0, -0.337855, 0.123244, 0, -1.38136)
 
 [node name="PathFollow3D4" type="PathFollow3D" parent="carros/industria/Path3D"]
-transform = Transform3D(0.999868, -2.73764e-08, 0.01537, 9.18942e-11, 1, 1.77514e-06, -0.01537, -1.77495e-06, 0.999868, 0.609292, -4.26233e-05, -20.9505)
+transform = Transform3D(0.999868, -2.73764e-08, 0.01537, 9.18941e-11, 1, 1.77514e-06, -0.01537, -1.77495e-06, 0.999868, 0.609292, -4.26233e-05, -20.9505)
 progress = 24.0065
 script = ExtResource("12_dee2j")
 
@@ -2288,6 +2290,16 @@ offset_top = 94.0
 offset_right = 760.0
 offset_bottom = 117.0
 text = "Cuidado con los carros volviste al principio"
+
+[node name="carros2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("18_4r5i3")
+volume_db = 29.257
+autoplay = true
+
+[node name="musica" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("19_glob4")
+volume_db = 7.266
+autoplay = true
 
 [connection signal="ready" from="Character" to="." method="_on_character_ready"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
