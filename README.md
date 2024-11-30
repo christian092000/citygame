@@ -13,7 +13,7 @@
 ---
 
 ## 🎯 **Objetivo del juego**
-Navega por la ciudad evitando obstáculos, interactúa con los NPCs y disfruta de la atmósfera urbana. **CityGame** no solo es un juego, es una experiencia de exploración relajante en un mundo inspirado en la vida cotidiana.
+Navega por la ciudad evitando los vehiculos en esta recreacion de los alrededores del Parque Morelos.
 
 ---
 
